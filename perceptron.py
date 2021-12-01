@@ -60,7 +60,7 @@ class Perceptron:
         x /= 255
         return (x * 2) - 1 
 
-    def normalizar(self,color):
+    def normalize(self,color):
         for i in range(len(color)):
             color[i] = self.minimax(color[i])
 

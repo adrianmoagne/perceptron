@@ -13,7 +13,7 @@ perceptron.training()
 def color():
     my_color = colorchooser.askcolor()
     color = list(my_color[0])
-    perceptron.normalizar(color)
+    perceptron.normalize(color)
     pick = perceptron.result(color)
     my_label = Label(root,text=my_color).pack(pady=10)
     my_label2 = Label(root,text=f"You picked  {pick[0]}", font=("Helvetica",32),bg=my_color[1]).pack()
